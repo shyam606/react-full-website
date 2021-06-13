@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* ///////////// Navbar ///////////// */
+.navbar{
+    background-color: #fff !important;
+}
+.navbar-brand{
+    font-size: 1.9rem !important;
+    color:#0d6efd !important;
+}
+.navbar a{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px dotted #565387;
+}
+.navbar a:hover{
+    color:#3498db !important;
+}
+.myClass{
+    margin-left: auto;
+}
+/* //////////// Header //////// */
+#header{
+    width: 100%;
+    height: 550px;
+    /* background-color: green; */
+    margin-top:40px;
+}
+.brand-name{
+    color:#0d6efd;
+}
+.btn{
+    transition: 0.5s;
+}
+.header-img img{
+    /* border:1px solid red; */
+    height: 400px;
+   float: right;
+}
+.animated{
+    
+    animation: animate 5s ease-in-out infinite;
+    /* //////2nd animation/////// */
+    /* animation: animate 2s ease-in-out infinite alternate-reverse both; */
+
+}
+@keyframes animate{
+    0%{
+		transform: scaley(.75);
+	}
+	20%{
+		transform: scaley(.95);
+	}
+    60%{
+        transform: scaley(.75);
+    }
+    80%{
+        transform: scaley(.95);
+    }
+	100%{
+        transform: scaley(.75);
+    }
+    /* 2nd animation */
+    /* 0%{
+        transform: translatey(10px);
+    }
+    100%{
+        transform: translatey(-10px);
+    } */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* //////////  Card ///////// */
+.card_img{
+    height: 250px;
+}
+/* /////// contact //////// */
+.contact_div{
+    margin: auto;
+}
+.main_div{
+    height: 550px;
+}
+
+/* ////// footer ////// */
+
+/* ///////// media query /////// */
+@media (max-width:962px) {
+    #header{
+        height: 700px;
+    }
 }
